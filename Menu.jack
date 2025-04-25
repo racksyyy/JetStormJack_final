@@ -1,0 +1,147 @@
+class Menu {
+    method void show() {
+        var int key;
+        var int memAddress; 
+        do Screen.clearScreen();
+
+        do Screen.drawLine(5, 5, 506, 5);
+        do Screen.drawLine(5, 6, 506, 6);
+        do Screen.drawLine(5, 7, 506, 7);
+
+        do Screen.drawLine(5, 248, 506, 248);
+        do Screen.drawLine(5, 249, 506, 249);
+        do Screen.drawLine(5, 250, 506, 250);
+
+        do Screen.drawLine(5, 5, 5, 250);
+        do Screen.drawLine(6, 5, 6, 250);
+        do Screen.drawLine(7, 5, 7, 250);
+
+        do Screen.drawLine(504, 5, 504, 250);
+        do Screen.drawLine(505, 5, 505, 250);
+        do Screen.drawLine(506, 5, 506, 250);
+
+        let memAddress = 16384+1803;
+
+        do Memory.poke(memAddress +1600, -256);
+        do Memory.poke(memAddress +1632, -256);
+        do Memory.poke(memAddress +1664, -256);
+        do Memory.poke(memAddress +1696, -256);
+        do Memory.poke(memAddress +1728, 7936);
+        do Memory.poke(memAddress +1760, 7936);
+        do Memory.poke(memAddress +1792, 7936);
+        do Memory.poke(memAddress +1824, 7936);
+        do Memory.poke(memAddress +1856, 7936);
+        do Memory.poke(memAddress +1888, 7936);
+        do Memory.poke(memAddress +1920, 7936);
+        do Memory.poke(memAddress +1952, 7936);
+        do Memory.poke(memAddress +1984, 7936);
+        do Memory.poke(memAddress +2016, 7936);
+        do Memory.poke(memAddress +2048, -256);
+        do Memory.poke(memAddress +2080, -256);
+        do Memory.poke(memAddress +2112, -256);
+        do Memory.poke(memAddress +2144, -256);
+        do Memory.poke(memAddress +2496, -256);
+        do Memory.poke(memAddress +2528, -256);
+        do Memory.poke(memAddress +2560, -256);
+        do Memory.poke(memAddress +2592, -256);
+
+        do Memory.poke(memAddress +1601, -3073);
+        do Memory.poke(memAddress +1633, -3073);
+        do Memory.poke(memAddress +1665, -3073);
+        do Memory.poke(memAddress +1697, -3073);
+        do Memory.poke(memAddress +2049, 1023);
+        do Memory.poke(memAddress +2081, 1023);
+        do Memory.poke(memAddress +2113, 1023);
+        do Memory.poke(memAddress +2145, 1023);
+        do Memory.poke(memAddress +2177, 960);
+        do Memory.poke(memAddress +2209, 960);
+        do Memory.poke(memAddress +2241, 960);
+        do Memory.poke(memAddress +2273, 960);
+        do Memory.poke(memAddress +2305, 960);
+        do Memory.poke(memAddress +2337, 960);
+        do Memory.poke(memAddress +2369, 960);
+        do Memory.poke(memAddress +2401, 960);
+        do Memory.poke(memAddress +2433, 960);
+        do Memory.poke(memAddress +2465, 960);
+        do Memory.poke(memAddress +2497, 1023);
+        do Memory.poke(memAddress +2529, 1023);
+        do Memory.poke(memAddress +2561, 1023);
+        do Memory.poke(memAddress +2593, 1023);
+
+        do Memory.poke(memAddress +2, -256);
+        do Memory.poke(memAddress +34, -256);
+        do Memory.poke(memAddress +66, -256);
+        do Memory.poke(memAddress +98, -256);
+        do Memory.poke(memAddress +130, -256);
+        do Memory.poke(memAddress +162, ~32767);
+        do Memory.poke(memAddress +194, ~32767);
+        do Memory.poke(memAddress +226, ~32767);
+        do Memory.poke(memAddress +258, ~32767);
+        do Memory.poke(memAddress +290, ~32767);
+        do Memory.poke(memAddress +322, ~32767);
+        do Memory.poke(memAddress +354, ~32767);
+        do Memory.poke(memAddress +386, ~32767);
+        do Memory.poke(memAddress +418, ~32767);
+        do Memory.poke(memAddress +450, ~32767);
+        do Memory.poke(memAddress +482, ~32767);
+        do Memory.poke(memAddress +514, ~32767);
+        do Memory.poke(memAddress +546, ~32767);
+        do Memory.poke(memAddress +578, ~32767);
+        do Memory.poke(memAddress +610, ~32767);
+        do Memory.poke(memAddress +642, ~32767);
+        do Memory.poke(memAddress +674, ~32767);
+        do Memory.poke(memAddress +706, ~32767);
+        do Memory.poke(memAddress +738, ~32767);
+        do Memory.poke(memAddress +770, ~32767);
+        do Memory.poke(memAddress +802, ~32767);
+        do Memory.poke(memAddress +834, -256);
+        do Memory.poke(memAddress +866, -256);
+        do Memory.poke(memAddress +898, -256);
+        do Memory.poke(memAddress +930, -256);
+        do Memory.poke(memAddress +1602, 16383);
+        do Memory.poke(memAddress +1634, 16383);
+        do Memory.poke(memAddress +1666, 16383);
+        do Memory.poke(memAddress +1698, 16383);
+        do Memory.poke(memAddress +1730, 248);
+        do Memory.poke(memAddress +1762, 248);
+        do Memory.poke(memAddress +1794, 248);
+        do Memory.poke(memAddress +1826, 248);
+        do Memory.poke(memAddress +1858, 248);
+        do Memory.poke(memAddress +1890, 248);
+        do Memory.poke(memAddress +1922, 248);
+        do Memory.poke(memAddress +1954, 248);
+        do Memory.poke(memAddress +1986, 248);
+        do Memory.poke(memAddress +2018, 248);
+        do Memory.poke(memAddress +2050, 248);
+        do Memory.poke(memAddress +2082, 248);
+        do Memory.poke(memAddress +2114, 248);
+        do Memory.poke(memAddress +2146, 248);
+        do Memory.poke(memAddress +2178, 248);
+        do Memory.poke(memAddress +2210, 248);
+        do Memory.poke(memAddress +2242, 248);
+        do Memory.poke(memAddress +2274, 248);
+        do Memory.poke(memAddress +2306, 248);
+        do Memory.poke(memAddress +2338, 248);
+        do Memory.poke(memAddress +2370, 248);
+        do Memory.poke(memAddress +2402, 248);
+        do Memory.poke(memAddress +2434, 248);
+        do Memory.poke(memAddress +2466, 248);
+        do Memory.poke(memAddress +2498, 248);
+        do Memory.poke(memAddress +2530, 248);
+        do Memory.poke(memAddress +2562, 248);
+        do Memory.poke(memAddress +2594, 248);
+
+        do Output.moveCursor(16, 21);
+        do Output.printString("Press SPACE to Start");
+
+        while (true) {
+            let key = Keyboard.keyPressed();
+            if (key = 32) {
+                return;
+            }
+            do Sys.wait(1);
+        }
+
+        return;
+    }
+}

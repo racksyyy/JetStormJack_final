@@ -1,0 +1,35 @@
+class GameOver {
+
+    constructor GameOver new() {
+        return this;
+    }
+
+    method void show() {
+        do Screen.clearScreen();
+        do Screen.drawLine(5, 5, 506, 5);
+        do Screen.drawLine(5, 6, 506, 6);
+        do Screen.drawLine(5, 7, 506, 7);
+
+        
+        do Screen.drawLine(5, 248, 506, 248);
+        do Screen.drawLine(5, 249, 506, 249);
+        do Screen.drawLine(5, 250, 506, 250);
+
+    
+        do Screen.drawLine(5, 5, 5, 250);
+        do Screen.drawLine(6, 5, 6, 250);
+        do Screen.drawLine(7, 5, 7, 250);
+
+        
+        do Screen.drawLine(504, 5, 504, 250);
+        do Screen.drawLine(505, 5, 505, 250);
+        do Screen.drawLine(506, 5, 506, 250);
+        
+        do Output.moveCursor(10, 22);
+        do Output.printString("=== GAME OVER ===");
+        do Output.moveCursor(15, 22);
+        do Output.printString("Press R to Restart");
+        return;
+    }
+}
+

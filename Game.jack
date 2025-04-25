@@ -1,0 +1,69 @@
+class Game {
+    field PlayersJet jet;
+    field BulletSet bullets;
+
+    constructor Game new() {
+        let jet = PlayersJet.new(80, 100);
+        let bullets = BulletSet.new();
+        return this;
+    }
+
+    method void run() {
+        var Menu menu;
+        var GameOver over;
+        var Game game;
+        var int key;
+        var int key1;
+        var boolean gameOver;
+
+        let gameOver = false;
+
+        do menu.show();
+
+        while (true) {
+            let key = Keyboard.keyPressed();
+
+            do jet.applyGravity();
+
+            if (key = 87) {
+                do jet.moveUp();
+            }
+
+            if (key = 32) {
+                do bullets.fire(jet.getX(), jet.getY());
+            }
+
+            do Screen.clearScreen();
+            do jet.draw();
+            do bullets.move();
+
+            if (jet.getY() > 1900) {
+                let gameOver = true;
+            }
+
+            if (gameOver) {
+                do over.show();
+
+                while (true) {
+                    let key1 = Keyboard.keyPressed();
+                    if (key1 = 82) {
+                        do dispose();
+                        let game = Game.new();
+                        do game.run();
+                    }
+                }
+            }
+
+            do Sys.wait(1);
+        }
+
+        return;
+    }
+
+    method void dispose() {
+        do jet.dispose();
+        do bullets.dispose();
+        do Memory.deAlloc(this);
+        return;
+    }
+}
